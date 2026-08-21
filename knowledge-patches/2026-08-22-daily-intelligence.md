@@ -44,6 +44,15 @@ Verified platform/search/commerce developments that materially improve how K8 ac
 - Classification: KNOWLEDGE PATCH
 - Effect: Treat agent-readiness and AI recommendation measurement as an emerging measurable layer beside SEO, but label Cloudflare-derived metrics and claims as vendor-specific. Do not convert the feature into a universal client requirement or paid-tool recommendation without evidence and Finlay review.
 
+## 5. Australia Post — FY26 Q4 online shopping shift
+- Source: Australia Post eCommerce reports, current FY26 Q4 update, retrieved 2026-08-22
+- URL: https://auspost.com.au/business/grow-your-business/ecommerce-reports
+- Status: Confirmed Australia Post quarterly reporting.
+- Verified change: Australia Post reports $21.9b online spend in FY26 Q4, a record-low $90 average basket, 59% of shoppers saying they never buy full price, and marketplaces accounting for 42% of online transactions with 17% year-on-year growth.
+- Affected leads: Renee Archer, Clarity, Finlay
+- Classification: KNOWLEDGE PATCH
+- Effect: For Australian eCommerce guidance, distinguish traffic growth from basket economics and marketplace pressure. Prioritise value clarity, cross-sell/bundle logic, delivery thresholds and conversion quality rather than reflexively recommending more acquisition spend.
+
 ## Provenance / governance
 - Atlas rule: source, date, affected leads and verified effect recorded above.
 - No behaviour, permission, role or model-platform authority change opened by this patch.
