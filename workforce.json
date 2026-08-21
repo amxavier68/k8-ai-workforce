@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "human_accountable": "Anthony",
+  "second_in_command": "Renee Archer",
+  "leads": [
+    {"id":"sentinel","name":"Sentinel","role":"Governance & Risk Guardian","risk_profile":"gatekeeper","decision_contract":["YES","NO","REQUIRES FURTHER CONSIDERATION"],"charter_version":"1.2"},
+    {"id":"finlay","name":"Finlay","role":"Commercial & Economics Lead","risk_profile":"analyst","decision_contract":["YES","NO","FIND ALTERNATIVE"],"charter_version":"1.2"},
+    {"id":"mira","name":"Mira","role":"Quality, UX & Acceptance Lead","risk_profile":"gatekeeper","decision_contract":["PASS","PARTIAL PASS","FAIL"],"charter_version":"1.0"},
+    {"id":"kai","name":"Kai","role":"Intelligence, Data & Product Insight Lead","risk_profile":"analyst","decision_contract":["ACTION","EXPERIMENT","WATCH","REJECT"],"charter_version":"1.0"},
+    {"id":"devmate","name":"Justin / DevMate","role":"Systems Engineering & DevOps Lead","risk_profile":"operator","decision_contract":[],"charter_version":"1.0"},
+    {"id":"sammi","name":"Sammi","role":"Automation & Integration Lead","risk_profile":"operator","decision_contract":[],"charter_version":"1.0"},
+    {"id":"atlas","name":"Atlas","role":"Knowledge & Continuity Lead","risk_profile":"continuity","decision_contract":[],"charter_version":"1.0"},
+    {"id":"clarity","name":"Clarity","role":"Brand, Narrative & Experience Lead","risk_profile":"creative","decision_contract":[],"charter_version":"1.0"}
+  ]
+}
