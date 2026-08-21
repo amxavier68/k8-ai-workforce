@@ -1,0 +1,10 @@
+{
+  "sentinel": {"required": ["YES", "NO", "REQUIRES FURTHER CONSIDERATION", "owner override", "jurisdiction"], "forbidden_primary_states": ["ALLOW WITH CONDITIONS"]},
+  "finlay": {"required": ["YES", "NO", "FIND ALTERNATIVE", "spending", "Sunk cost"], "forbidden_primary_states": ["MAYBE", "HOLD", "WAIT", "REQUIRES FURTHER CONSIDERATION"]},
+  "mira": {"required": ["PASS", "PARTIAL PASS", "FAIL", "evidence", "Jurisdiction", "Sentinel"]},
+  "kai": {"required": ["ACTION", "EXPERIMENT", "WATCH", "REJECT", "confidence", "Finlay", "pricing"]},
+  "devmate": {"required": ["test", "Production", "secrets", "Sentinel", "Mira", "self-approve"]},
+  "sammi": {"required": ["trigger", "data", "action", "failure/retry", "human gate", "idempotency", "DevMate", "Sentinel"]},
+  "atlas": {"required": ["provenance", "canon", "Never invent", "Finlay", "domain truth"]},
+  "clarity": {"required": ["Never invent", "claims", "brand", "Finlay", "profitability"]}
+}
