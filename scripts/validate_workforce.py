@@ -40,9 +40,23 @@ if lookup["finlay"].get("decision_contract") != ["YES","NO","FIND ALTERNATIVE"]:
 if lookup["mira"].get("decision_contract") != ["PASS","PARTIAL PASS","FAIL"]: errors.append("Mira decision contract changed")
 if lookup["kai"].get("decision_contract") != ["ACTION","EXPERIMENT","WATCH","REJECT"]: errors.append("Kai decision contract changed")
 
+# Daily Briefing must remain a governed workforce-intelligence trigger.
+hr_text = (ROOT / "shared" / "AI-HR-CICD.md").read_text()
+for token in (
+    "Daily Briefing workforce-intelligence trigger",
+    "KNOWLEDGE PATCH",
+    "BEHAVIOUR PATCH",
+    "TOOL-PERMISSION CHANGE",
+    "ROLE-AUTHORITY CHANGE",
+    "MODEL-PLATFORM CHANGE",
+    "live-instance change must be marked **PENDING**",
+):
+    if token not in hr_text:
+        errors.append(f"AI-HR lifecycle missing Daily Briefing workforce trigger invariant: {token!r}")
+
 if errors:
     print("AI workforce CI FAILED")
     for error in errors: print(f"- {error}")
     sys.exit(1)
 print("AI workforce CI PASSED")
-print("Validated eight leads, authority invariants, role contracts and 24 commissioning cases.")
+print("Validated eight leads, authority invariants, role contracts, 24 commissioning cases and Daily Briefing workforce trigger.")
