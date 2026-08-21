@@ -35,6 +35,15 @@ Verified platform/search/commerce developments that materially improve how K8 ac
 - Classification: KNOWLEDGE PATCH
 - Effect: Use staging and transaction-path validation before production updates; distinguish released performance improvements from experimental recovery features.
 
+## 4. Cloudflare — Agent Readiness and AEO visibility
+- Source: Cloudflare Blog, 2026-08-06
+- URL: https://blog.cloudflare.com/aeo/
+- Status: Confirmed Cloudflare product capability; Cloudflare's broader market claims remain vendor-reported evidence, not neutral industry benchmarks.
+- Verified change: Cloudflare added Agent Readiness diagnostics and an AEO visibility capability that checks agent access/readability and probes major assistants for citations/recommendations, while exposing crawl/referral activity by operator.
+- Affected leads: Renee Archer, Clarity, Kai, Atlas
+- Classification: KNOWLEDGE PATCH
+- Effect: Treat agent-readiness and AI recommendation measurement as an emerging measurable layer beside SEO, but label Cloudflare-derived metrics and claims as vendor-specific. Do not convert the feature into a universal client requirement or paid-tool recommendation without evidence and Finlay review.
+
 ## Provenance / governance
 - Atlas rule: source, date, affected leads and verified effect recorded above.
 - No behaviour, permission, role or model-platform authority change opened by this patch.
