@@ -35,7 +35,16 @@ Verified developments that materially improve how K8 accountable AI leads reason
 - Classification: KNOWLEDGE PATCH
 - Effect: For sites that publish fresh, recurring authority content, Preferred Sources becomes a legitimate audience-retention/discovery mechanism. It is not a ranking hack and should not be recommended to brochure sites with no publishing cadence.
 
-## 4. Web platform — native form controls and accessibility continue to converge
+## 4. Google Search — merchant listing schema now aligns category and sale timing more closely with Merchant Center
+- Source: Google Search Central documentation update, 2026-07-07
+- URL: https://developers.google.com/search/docs/appearance/structured-data/merchant-listing
+- Status: Confirmed documentation/schema guidance.
+- Verified change: Google documents `Product.category` for both merchant-defined categories and Google Product Categories, and clarifies `validFrom`, `validThrough`, and `priceValidUntil` for sale-price effective dates.
+- Affected leads: Clarity, DevMate, Atlas, Renee Archer
+- Classification: KNOWLEDGE PATCH
+- Effect: For eCommerce clients, product category and sale-date data should be consistent across on-page structured data and Merchant Center/feed data. Do not fabricate sale timing or category mappings; validate generated WooCommerce markup before adding custom schema.
+
+## 5. Web platform — native form controls and accessibility continue to converge
 - Source: web.dev, 'New to the web platform in July', published 2026-07-31
 - URL: https://web.dev/blog/web-platform-07-2026
 - Status: Confirmed stable/beta browser status as documented by web.dev.
