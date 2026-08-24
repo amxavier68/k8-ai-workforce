@@ -5,7 +5,7 @@ Trigger: Kollabor8 Daily Brief
 Owner accountability: Anthony
 Release manager: Renee Archer
 
-## WordPress 7.1 — responsive authoring and media workflow
+## 1. WordPress 7.1 — responsive authoring and media workflow
 
 - Source: WordPress.org release announcement, 2026-08-19
 - URL: https://wordpress.org/news/2026/08/mary-lou/
@@ -14,6 +14,16 @@ Release manager: Renee Archer
 - Affected leads: Renee Archer, DevMate, Mira, Clarity
 - Classification: KNOWLEDGE PATCH
 - Effect: Treat native responsive controls and media processing as available WordPress capability, but verify theme/plugin compatibility before applying it to Elementor/Astra or WooCommerce sites. Native availability does not justify rebuilding a working Elementor pathway or updating production without staging evidence.
+
+## 2. Search Console — August generative-AI reporting anomalies
+
+- Source: Google Search Console Data Anomalies, current entry for 2026-08-13 to 2026-08-17
+- URL: https://support.google.com/webmasters/answer/6211453
+- Status: Confirmed logging errors; site performance itself was not identified as the cause.
+- Verified change: A logging error reduced recorded Discover clicks/impressions on 2026-08-13 and reduced Generative AI Search impressions for 2026-08-13 through 2026-08-17. The issue affected reporting data only.
+- Affected leads: Renee Archer, Clarity, Atlas, Kai
+- Classification: KNOWLEDGE PATCH
+- Effect: Annotate or exclude the affected dates when interpreting generative-AI and Discover trends. Do not diagnose a ranking or visibility loss from those dips alone.
 
 ## Provenance / governance
 
