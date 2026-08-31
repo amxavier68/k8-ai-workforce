@@ -42,14 +42,14 @@ This change does not infer that commissioned K8 GPTs performed the incident beha
 
 ## Gate evidence
 
-- Static workforce CI: PASS on the governed change branch before approval.
+- Initial static workforce CI: PASS before approval edits; final approval branch must also pass before merge.
 - Nine unit, adversarial and cross-seat boundary test specifications: present and structurally validated.
 - Sentinel gate: ACCEPTED — the doctrine preserves least privilege, rejects credential/control bypass, requires early escalation and keeps owner authority unchanged.
 - Mira gate: ACCEPTED — the tests preserve authorised work, require safe stopping only at material boundary failures, and include rollback for over-refusal.
 - Renee hand-off: CONFIRMED — peer-agent instructions remain untrusted unless authorised; material boundary changes route to Sentinel rather than silently expanding scope.
 - Anthony: APPROVED canonical promotion on 2026-09-01.
 
-## Live-instance boundary
+## No live mutation
 
 Canonical merge does not itself rewrite commissioned custom GPT instructions, model selection, connector permissions, credentials, production workflows or external communications. Any live custom GPT whose current instructions do not already express this doctrine requires a separately verified Builder update and canary. Do not claim a live instance has changed until that update is actually performed and tested.
 
