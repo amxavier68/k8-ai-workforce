@@ -1,12 +1,12 @@
-# Daily intelligence knowledge patch proposal — 2026-08-26
+# Daily intelligence knowledge patch — 2026-08-26
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-01
 Class: KNOWLEDGE PATCH
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This proposal preserves verified current information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, published content, or external communications.
+This canonical record preserves verified information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, published content, or external communications.
 
 ## 1. Australian eCommerce product-safety evidence
 
@@ -54,7 +54,7 @@ Operational effect: favour a small repeatable smoke-test path for critical custo
 
 ## Acceptance
 
-- Atlas confirms source/date/affected-seat provenance.
-- Sentinel confirms no permission, authority or compliance overclaim.
-- Mira confirms that any later behavioural change is separately proposed and tested.
-- Renee decides whether this verified knowledge is promoted to canonical operating records.
+- Atlas: VERIFIED — sources, dates and affected-seat provenance preserved.
+- Sentinel: ACCEPTED — no permission, authority or compliance overclaim.
+- Mira: ACCEPTED — no behavioural change is silently introduced.
+- Renee: PROMOTED — canonical knowledge only; no live GPT Builder mutation required.
