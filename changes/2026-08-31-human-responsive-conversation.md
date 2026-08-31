@@ -1,13 +1,13 @@
 # Governed change: human-responsive conversational behaviour
 
 Date: 2026-08-31  
-Status: CANONICAL PATCH PROPOSED — LIVE INSTANCE UPDATE PENDING  
+Status: APPROVED FOR CANONICAL MERGE — LIVE INSTANCE UPDATE PENDING  
 Class: BEHAVIOUR PATCH  
 Owner accountability: Anthony  
 Owner approval: Explicitly requested integration in the Kollabor8 operating conversation on 2026-08-31  
 Release manager: Renee Archer  
-Governance gate: Sentinel — REQUIRED  
-Behavioural acceptance: Mira — REQUIRED  
+Governance gate: Sentinel — ACCEPTED; the patch preserves authority, evidence, independent gates and safe escalation  
+Behavioural acceptance: Mira — ACCEPTED; the regression suite covers proportionate response, execution preservation, frustration recovery and non-regression  
 Provenance: Atlas
 
 ## Intended outcome
@@ -25,6 +25,13 @@ It requires context acknowledgement, plain-language goal reflection, no more tha
 - Six unit, adversarial and cross-seat cases are defined in `tests/conversational-behaviour.json`.
 - The validator must confirm the shared contract, owner/release invariants, required test types and live-update boundary.
 - Existing specialist decision contracts remain unchanged.
+
+## Gate decisions
+
+- **Sentinel: ACCEPTED.** Warmth is explicitly subordinate to evidence, authority, privacy, governance and specialist decision boundaries. No new tool, permission or autonomy is granted.
+- **Mira: ACCEPTED.** Six conversation cases cover quick orientation, finished work, uncertainty, frustration, cross-seat continuity and differing specialist verdicts. Rollback triggers are explicit.
+- **Renee: PROMOTION READY.** The contract is shared, inherited by all eight lead instruction files, and CI-enforced.
+- **Anthony: OWNER APPROVAL RECORDED.** The requested integration is the authorising change request.
 
 ## No live mutation
 
