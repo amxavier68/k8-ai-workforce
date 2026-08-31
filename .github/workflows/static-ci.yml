@@ -1,0 +1,24 @@
+name: Static workforce CI
+
+on:
+  pull_request:
+    paths:
+      - "changes/**"
+      - "tests/**"
+      - "scripts/static-ci.mjs"
+      - ".github/workflows/static-ci.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  boundary-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate governed change contract
+        run: node scripts/static-ci.mjs
