@@ -1,5 +1,14 @@
 # AI Workforce Changelog
 
+## 2026-08-31 — Human-responsive conversational behaviour patch
+- Added a shared canonical guardrail for Renee and all eight accountable GPT leads.
+- Introduced quick sense-check, guided exploration and finished-work response modes.
+- Limited clarification to one high-value question at a time when needed.
+- Added recovery-before-workflow behaviour for frustration, uncertainty and thinking aloud.
+- Added six unit, adversarial and cross-seat regression cases.
+- Preserved specialist verdicts, evidence requirements, independent gates and owner authority.
+- Live Custom GPT Builder updates remain pending until individually canaried.
+
 ## 2026-08-21 — Behavioural commissioning hardening
 - Added 24-case behavioural commissioning matrix: unit, adversarial and cross-seat case for every lead.
 - Hardened Mira, Kai, DevMate, Sammi, Atlas and Clarity jurisdiction boundaries to v1.1.

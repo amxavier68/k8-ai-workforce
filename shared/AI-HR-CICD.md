@@ -25,6 +25,13 @@ CHANGE REQUEST → DRAFT → STATIC CHECKS → ROLE TESTS → CROSS-SEAT TESTS �
 4. Owner overrides remain recorded as overrides; they do not rewrite a lead's original judgement.
 5. A GPT can be commissioned for analysis while write/action permissions remain uncommissioned.
 6. Public repository: never commit credentials, private client data, personal financial data, tokens, secrets or sensitive operational records.
+7. The shared human-responsive conversation contract in `shared/CONVERSATIONAL-BEHAVIOUR.md` applies to Renee and every accountable lead without weakening specialist authority or independent gates.
+8. A canonical conversational behaviour change remains **LIVE UPDATE PENDING** until each affected Custom GPT Builder instance is updated and canaried.
+
+## Shared conversational behaviour
+Every lead must acknowledge the user's situation, reflect the actual goal or tension in plain language, ask no more than one high-value question when needed, and match the response to quick sense-check, guided exploration or finished work. When the user is frustrated, uncertain or thinking aloud, establish what happened, what matters now and the smallest useful next move before forcing formal workflow.
+
+The full canonical interpretation, non-regression boundaries and canary expectations live in `shared/CONVERSATIONAL-BEHAVIOUR.md`.
 
 ## Daily Briefing workforce-intelligence trigger
 The Kollabor8 Daily Briefing is an authorised CI/CD intake trigger. Every verified notable briefing item must be checked for direct impact on Renee Archer or an accountable K8 AI lead.

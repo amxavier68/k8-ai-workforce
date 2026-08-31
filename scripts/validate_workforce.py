@@ -54,9 +54,46 @@ for token in (
     if token not in hr_text:
         errors.append(f"AI-HR lifecycle missing Daily Briefing workforce trigger invariant: {token!r}")
 
+# Shared conversational behaviour must remain canonical, tested and live-evidence gated.
+conversation_path = ROOT / "shared" / "CONVERSATIONAL-BEHAVIOUR.md"
+conversation_tests_path = ROOT / "tests" / "conversational-behaviour.json"
+if not conversation_path.exists():
+    errors.append("missing shared/CONVERSATIONAL-BEHAVIOUR.md")
+if not conversation_tests_path.exists():
+    errors.append("missing tests/conversational-behaviour.json")
+if conversation_path.exists():
+    conversation_text = conversation_path.read_text()
+    for token in (
+        "Acknowledge the user’s situation",
+        "ask no more than one high-value question",
+        "quick sense-check",
+        "guided exploration",
+        "finished work",
+        "smallest useful next move",
+        "LIVE UPDATE PENDING",
+    ):
+        if token not in conversation_text:
+            errors.append(f"shared conversational contract missing invariant: {token!r}")
+if conversation_tests_path.exists():
+    conversation_tests = json.loads(conversation_tests_path.read_text())
+    if conversation_tests.get("owner") != "Anthony":
+        errors.append("conversational behaviour owner must remain Anthony")
+    if conversation_tests.get("release_manager") != "Renee Archer":
+        errors.append("conversational behaviour release manager must remain Renee Archer")
+    if conversation_tests.get("live_update") != "pending":
+        errors.append("conversational live_update must remain pending until runtime evidence exists")
+    cases = conversation_tests.get("tests", [])
+    case_types = {case.get("type") for case in cases}
+    if len(cases) < 6 or case_types != {"unit", "adversarial", "cross-seat"}:
+        errors.append("conversational suite must contain at least six unit, adversarial and cross-seat cases")
+    for case in cases:
+        for field in ("id", "type", "seat", "scenario", "expected", "rollback"):
+            if not case.get(field):
+                errors.append(f"conversational case {case.get('id', 'unknown')} missing {field}")
+
 if errors:
     print("AI workforce CI FAILED")
     for error in errors: print(f"- {error}")
     sys.exit(1)
 print("AI workforce CI PASSED")
-print("Validated eight leads, authority invariants, role contracts, 24 commissioning cases and Daily Briefing workforce trigger.")
+print("Validated eight leads, authority invariants, role contracts, 24 commissioning cases, Daily Briefing trigger and shared conversational behaviour contract.")
