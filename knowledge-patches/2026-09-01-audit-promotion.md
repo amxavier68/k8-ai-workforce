@@ -14,6 +14,14 @@ This audit covers the date-stamped knowledge records for 2026-08-26, 2026-08-27,
 
 Primary/current sources were rechecked before promotion. The audit confirmed the substantive claims while preserving release-vs-test, product-vs-API, geography, commercial and evidence-strength qualifiers.
 
+Representative primary-source anchors used during the final audit include:
+- ASIC media-release index: https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/
+- WooCommerce stable release index: https://developer.woocommerce.com/releases/
+- Google Search Central: https://developers.google.com/search
+- business.gov.au: https://business.gov.au/
+
+The complete source set remains embedded alongside each individual claim in the five date-stamped records.
+
 ## Corrections made before promotion
 
 1. ASIC's Small Business Strategy media release is dated 2026-08-05, not 2026-08-25. The source date was corrected.
