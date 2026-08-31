@@ -1,13 +1,13 @@
-# Weekend intelligence knowledge patch proposal — 2026-08-31
+# Weekend intelligence knowledge patch — 2026-08-31
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-01
 Class: KNOWLEDGE PATCH
 Coverage: consequential verified developments identified after the 2026-08-28 briefing
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This proposal changes no live GPT, role, permission, credential, production site, published content, subscription or external communication.
+This canonical record changes no live GPT, role, permission, credential, production site, published content, subscription or external communication.
 
 ## 1. Australian government-backed market education now explicitly joins SEO and AI search
 
@@ -55,8 +55,8 @@ Operational effect: treat it as progressive-enhancement research, not a replacem
 
 ## Acceptance
 
-- Atlas verifies source/date/scope and preserves test-vs-release qualifiers.
-- Sentinel verifies that recovery behaviour and origin trials grant no new permission or authority.
-- Mira validates any later UX behaviour proposal separately.
-- Finlay gates any commercial packaging or paid-tool implication.
-- Renee decides whether these proposals are promoted to canonical workforce knowledge.
+- Atlas: VERIFIED — source/date/scope and test-vs-release qualifiers preserved.
+- Sentinel: ACCEPTED — recovery behaviour and origin trials grant no new permission or authority.
+- Mira: ACCEPTED — any later UX behaviour change remains separately tested.
+- Finlay: GATE RETAINED — any commercial packaging or paid-tool implication remains separately gated.
+- Renee: PROMOTED — canonical knowledge only; no live GPT Builder mutation required.
