@@ -1,12 +1,12 @@
-# Daily intelligence knowledge patch proposal — 2026-08-28
+# Daily intelligence knowledge patch — 2026-08-28
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-01
 Class: KNOWLEDGE PATCH
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This proposal preserves verified current information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, production sites, published content, or external communications.
+This canonical record preserves verified current information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, production sites, published content, or external communications.
 
 ## 1. Australian online spending is favouring affordable discretionary treats
 
@@ -30,16 +30,18 @@ Change: WordPress 7.1 adds responsive block styling, configurable previews, expa
 
 Operational effect: identify the site's actual builder before advising implementation. These Site Editor capabilities do not replace DFG's accepted Astra + Elementor Pro workflow, and a core upgrade is not authorised without staging, compatibility checks and the established commerce-path regression test.
 
-## 3. WooCommerce 11.1 is a pre-release, not a DFG production target
+## 3. WooCommerce 11.1 remains scheduled, not yet verified stable at this audit point
 
-Source: WooCommerce Developer Blog, 2026-08-18  
-URL: https://developer.woocommerce.com/2026/08/18/woocommerce-11-1-pre-release/
+Source: WooCommerce Developer Blog, pre-release published 2026-08-18; stable status rechecked early 2026-09-01 AEST  
+URLs:
+- https://developer.woocommerce.com/2026/08/18/woocommerce-11-1-pre-release/
+- https://developer.woocommerce.com/releases/
 
 Affected leads: Renee, DevMate, Sentinel, Atlas
 
-Change: WooCommerce 11.1 beta includes a REST refund endpoint, EU order-withdrawal support and variable-product performance work, with final release scheduled for 2026-09-01.
+Change: WooCommerce 11.1 beta includes a REST refund endpoint, EU order-withdrawal support and variable-product performance work, with final release scheduled for 2026-09-01. At the 2026-09-01 audit point, WooCommerce's official stable releases page still listed 11.0.1 as stable, so 11.1 must not yet be treated as a verified production release.
 
-Operational effect: treat features and compatibility as test-environment intelligence until the final release and extension compatibility are verified. No unattended production upgrade or DFG configuration change follows from the pre-release.
+Operational effect: treat 11.1 features and compatibility as test-environment intelligence until the official stable release is verified and extension compatibility is checked. No unattended production upgrade or DFG configuration change follows from the scheduled date alone.
 
 ## 4. Search, Discover and News are becoming more preference-shaped
 
@@ -61,12 +63,12 @@ Affected leads: Renee, Clarity, Kai, Sentinel, Atlas
 
 Change: Google says Ask Maps can perform multi-step food-ordering tasks in supported contexts, using real-time and personalised information.
 
-Operational effect: monitor the shift from local discovery to action completion. Current evidence is food-ordering specific and does not prove equivalent booking or floristry capabilities in Australia, so record broader K8/client implications as WATCH and do not redesign DFG or alter permissions around it.
+Operational effect: monitor the shift from local discovery to action completion. Current evidence is food-ordering specific and does not prove equivalent booking or floristry capabilities in Australia, so broader K8/client implications remain WATCH and do not justify a DFG redesign or permission change.
 
 ## Acceptance
 
-- Atlas confirms sources, dates, affected seats and claim qualification.
-- Sentinel confirms that no pre-release, personalised-search or agentic capability grants new authority.
-- Finlay assesses any later paid marketplace, tooling or promotional proposal through YES / NO / FIND ALTERNATIVE.
-- Mira confirms that any later behavioural change is separately proposed and tested.
-- Renee decides whether verified knowledge is promoted to canonical operating records.
+- Atlas: VERIFIED — sources, dates and current release status checked; scheduled release is not promoted to stable without evidence.
+- Sentinel: ACCEPTED — no pre-release, personalised-search or agentic capability grants new authority.
+- Finlay: GATE RETAINED — later paid marketplace/tooling proposals still require YES / NO / FIND ALTERNATIVE.
+- Mira: ACCEPTED — no behavioural change silently introduced.
+- Renee: PROMOTED — canonical knowledge only; no live GPT Builder mutation required.
