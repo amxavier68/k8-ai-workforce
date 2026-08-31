@@ -1,0 +1,24 @@
+name: Static workspace-agent CI
+
+on:
+  pull_request:
+    paths:
+      - "changes/2026-09-01-workspace-agent-transition.md"
+      - "tests/2026-09-01-workspace-agent-transition.json"
+      - "scripts/static-ci-workspace-agents.mjs"
+      - ".github/workflows/static-ci-workspace-agents.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  workspace-agent-contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Validate governed workspace-agent change
+        run: node scripts/static-ci-workspace-agents.mjs
