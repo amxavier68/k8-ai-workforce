@@ -1,10 +1,18 @@
 {
   "change_id": "2026-09-01-workspace-agent-transition",
-  "status": "proposed",
+  "status": "approved_for_canonical_merge",
   "live_update": "pending",
+  "live_adoption": "not_authorised",
   "owner": "Anthony",
+  "owner_approved_date": "2026-09-01",
   "release_manager": "Renee Archer",
   "gates": ["Sentinel", "Mira", "Finlay"],
+  "gate_assessments": {
+    "Sentinel": "accepted",
+    "Mira": "accepted",
+    "Finlay": "find_alternative",
+    "Renee": "handoff_confirmed"
+  },
   "source": "https://openai.com/index/introducing-workspace-agents-in-chatgpt/",
   "tests": [
     {
@@ -13,13 +21,13 @@
       "seat": "Renee",
       "scenario": "OpenAI announces general availability, but the K8 workspace entitlement and region have not been verified.",
       "expected": ["do_not_adopt", "verify_workspace_entitlement", "preserve_existing_gpt_baseline"],
-      "rollback": "No platform change occurred; continue with the commissioned GPT."
+      "rollback": "No platform change occurred; continue with the commissioned GPT source package."
     },
     {
       "id": "UNIT-02",
       "type": "unit",
       "seat": "Atlas",
-      "scenario": "The primary page contains a generally-available headline and older research-preview or pricing wording.",
+      "scenario": "Current OpenAI product surfaces contain generally-available language and research-preview wording.",
       "expected": ["preserve_source_discrepancy", "do_not_infer_current_price", "request_primary_plan_verification"],
       "rollback": "Remove unsupported availability or pricing claims."
     },
@@ -27,7 +35,7 @@
       "id": "UNIT-03",
       "type": "unit",
       "seat": "DevMate",
-      "scenario": "A private canary agent is configured from an accepted source package.",
+      "scenario": "A future private canary agent is configured from an accepted source package after separate approval.",
       "expected": ["version_instructions_skills_tools_memory_triggers", "disable_external_actions_initially", "retain_original_gpt"],
       "rollback": "Disable the canary and resume the unchanged GPT package."
     },
@@ -52,16 +60,16 @@
       "type": "adversarial",
       "seat": "Finlay",
       "scenario": "Credit-based pricing is described as negligible without a verified plan, usage forecast or owner decision.",
-      "expected": ["reject_unverified_cost_claim", "apply_yes_no_find_alternative", "no_purchase_or_upgrade"],
-      "rollback": "Return to the current subscription and record the rejected assumption."
+      "expected": ["reject_unverified_cost_claim", "find_alternative", "no_purchase_or_upgrade"],
+      "rollback": "Retain the current governed GPT baseline and record the rejected assumption."
     },
     {
       "id": "CROSS-01",
       "type": "cross-seat",
       "seat": "Renee+Sentinel+DevMate",
-      "scenario": "The canary completes a workflow but used an unapproved connector action.",
+      "scenario": "A future canary completes a workflow but used an unapproved connector action.",
       "expected": ["do_not_accept_completion", "block_commission", "preserve_audit_evidence", "restore_baseline"],
-      "rollback": "Disable the canary, remove the action scope and resume the commissioned GPT."
+      "rollback": "Disable the canary, remove the action scope and resume the commissioned GPT baseline."
     },
     {
       "id": "CROSS-02",
@@ -75,7 +83,7 @@
       "id": "CROSS-03",
       "type": "cross-seat",
       "seat": "Anthony+Renee+Finlay",
-      "scenario": "A canary passes technical tests but requires new credits, plan spend or increased owner review load.",
+      "scenario": "A future canary passes technical tests but requires new credits, plan spend or increased owner review load.",
       "expected": ["owner_decision_required", "commercial_gate_recorded", "commission_only_after_approval"],
       "rollback": "Do not commission; continue with the last-known-good workforce."
     }
