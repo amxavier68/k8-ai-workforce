@@ -1,12 +1,12 @@
-# Daily intelligence knowledge patch proposal — 2026-08-27
+# Daily intelligence knowledge patch — 2026-08-27
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-01
 Class: KNOWLEDGE PATCH
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This proposal preserves verified information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, published content, or external communications.
+This canonical record preserves verified information only. It changes no live GPT instructions, authority, permissions, credentials, subscriptions, published content, or external communications.
 
 ## 1. Australian branded SMS sender verification
 
@@ -21,7 +21,7 @@ Operational effect: during CRM/SMS discovery, first verify whether a branded sen
 
 ## 2. ASIC small-business guidance consolidation
 
-Source: Australian Securities and Investments Commission, 2026-08-25  
+Source: Australian Securities and Investments Commission, 2026-08-05  
 URL: https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-180mr-asic-launches-small-business-strategy-helping-to-educate-and-protect-small-businesses
 
 Affected leads: Renee, Clarity, Atlas
@@ -54,6 +54,6 @@ Operational effect: use the attribution as implementation provenance for Shopify
 
 ## Acceptance
 
-- Atlas confirms sources, dates, affected seats and claim qualification.
-- Sentinel confirms that the SMS item grants no authority and causes no credential/provider action.
-- Renee decides whether the verified knowledge is promoted to canonical operating records.
+- Atlas: VERIFIED — source dates and claim qualification checked; ASIC date corrected to 2026-08-05.
+- Sentinel: ACCEPTED — the SMS item grants no authority and causes no credential/provider action.
+- Renee: PROMOTED — canonical knowledge only; no live GPT Builder mutation required.
