@@ -1,12 +1,12 @@
-# Daily intelligence knowledge patch proposal — 2026-09-01
+# Daily intelligence knowledge patch — 2026-09-01
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-01
 Class: KNOWLEDGE PATCH
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This proposal preserves verified current information only. It changes no live GPT, role, authority, permission, credential, production site, payment configuration, price, subscription, published content, or external communication.
+This canonical record preserves verified current information only. It changes no live GPT, role, authority, permission, credential, production site, payment configuration, price, subscription, published content, or external communication.
 
 ## 1. Australian card-payment surcharge prohibition
 
@@ -52,9 +52,8 @@ Operational effect: use platform evidence to identify search traction across own
 
 ## Acceptance
 
-- Atlas confirms source, date, affected-seat and claim qualification.
-- Sentinel confirms no payment, tool or permission authority is granted.
-- Finlay gates any pricing, provider, subscription or paid-tool consequence.
-- Mira confirms any later behavioural change is separately proposed and tested.
-- Renee decides whether verified knowledge is promoted to canonical operating records.
-- Live GPT Builder changes remain pending unless Anthony approves and the commissioned source package is updated through the governed release path.
+- Atlas: VERIFIED — source, date, affected-seat and claim qualification preserved.
+- Sentinel: ACCEPTED — no payment, tool or permission authority is granted.
+- Finlay: GATE RETAINED — pricing, provider, subscription and paid-tool consequences remain separately gated.
+- Mira: ACCEPTED — any later behavioural change is separately proposed and tested.
+- Renee: PROMOTED — canonical knowledge only; no live GPT Builder mutation required.
