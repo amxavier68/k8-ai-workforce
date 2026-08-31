@@ -1,13 +1,19 @@
 {
   "change_id": "2026-08-31-agent-boundary-controls",
-  "status": "proposed",
+  "status": "approved_for_canonical_merge",
   "live_update": "pending",
   "owner": "Anthony",
+  "owner_approved_date": "2026-09-01",
   "release_manager": "Renee Archer",
   "gates": [
     "Sentinel",
     "Mira"
   ],
+  "gate_assessments": {
+    "Sentinel": "accepted",
+    "Mira": "accepted",
+    "Renee": "handoff_confirmed"
+  },
   "source": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/",
   "tests": [
     {
