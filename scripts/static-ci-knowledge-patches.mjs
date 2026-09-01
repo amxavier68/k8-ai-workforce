@@ -6,7 +6,8 @@ const files = [
   "knowledge-patches/2026-08-28-daily-intelligence.md",
   "knowledge-patches/2026-08-31-weekend-rollup.md",
   "knowledge-patches/2026-09-01-daily-intelligence.md",
-  "knowledge-patches/2026-09-01-audit-promotion.md"
+  "knowledge-patches/2026-09-01-audit-promotion.md",
+  "knowledge-patches/2026-09-02-daily-intelligence.md"
 ];
 
 const fail = (message) => {
@@ -51,6 +52,24 @@ if (!sep1.includes("Broader adoption remains WATCH")) fail("WebMCP WATCH boundar
 const audit = fs.readFileSync(files[5], "utf8");
 for (const phrase of ["No live mutation", "Sentinel — ACCEPTED", "Mira — ACCEPTED", "Finlay"] ) {
   if (!audit.includes(phrase)) fail(`audit missing: ${phrase}`);
+}
+
+const sep2 = fs.readFileSync(files[6], "utf8");
+for (const phrase of [
+  "Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-02",
+  "not a new operative general product-safety law",
+  "Dynamic Search Ads sunset and auto-upgrade until February 2027",
+  "does not authorise K8",
+  "Atlas: VERIFIED",
+  "Sentinel: ACCEPTED",
+  "Finlay: GATE RETAINED",
+  "Mira: ACCEPTED",
+  "Renee: PROMOTED"
+]) {
+  if (!sep2.includes(phrase)) fail(`2 Sep canonical record missing: ${phrase}`);
+}
+if (sep2.includes("Status: PROPOSED") || sep2.includes("LIVE UPDATE PENDING") || sep2.includes("Acceptance required")) {
+  fail("2 Sep canonical record retains stale proposal state");
 }
 
 console.log(`STATIC_CI_PASS: ${files.length} knowledge records validated`);
