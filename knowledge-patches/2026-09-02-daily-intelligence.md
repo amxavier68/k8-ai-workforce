@@ -1,12 +1,12 @@
-# Daily intelligence knowledge patch proposal — 2026-09-02
+# Daily intelligence knowledge patch — 2026-09-02
 
-Status: PROPOSED — LIVE UPDATE PENDING
+Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-02
 Class: KNOWLEDGE PATCH
 Owner accountability: Anthony
 Release manager: Renee Archer
 Provenance authority: Atlas
 
-This record preserves verified current information for governed review. It changes no live GPT, role, authority, permission, credential, production site, advertising account, client system, price, subscription, published content, or external communication.
+This canonical record preserves verified current information only. It changes no live GPT, role, authority, permission, credential, production site, advertising account, client system, price, subscription, published content, or external communication.
 
 ## 1. Australian online product-safety reform signal
 
@@ -28,10 +28,10 @@ Verified change: Starting in September 2026, eligible campaigns using Automatica
 
 Operational effect: inspect the actual advertising account and change notice before advising. An automatic platform transition does not authorise K8 to enable, expand, spend, rewrite assets, change landing pages or accept broader query matching. Preserve a pre-change snapshot, compare post-change search terms/assets/URLs and retain Finlay's spend gate and owner approval.
 
-## Acceptance required
+## Acceptance
 
-- Atlas: verify source, dates, affected seats and the distinction between enacted requirements and proposed reform.
-- Sentinel: confirm no advertising, tool, permission or client-system authority is granted.
-- Finlay: retain YES / NO / FIND ALTERNATIVE for spend and paid-media consequences.
-- Mira: confirm no behavioural doctrine is being silently changed.
-- Renee: promote only after the governance gates pass.
+- Atlas: VERIFIED — primary sources, publication/update dates, affected seats and the proposed-law boundary were rechecked on 2026-09-02.
+- Sentinel: ACCEPTED — this knowledge record grants no advertising, tool, permission, credential or client-system authority.
+- Finlay: GATE RETAINED — paid-media spend and commercial consequences still require YES / NO / FIND ALTERNATIVE plus owner approval.
+- Mira: ACCEPTED — no behavioural doctrine or live GPT instruction is changed by this patch.
+- Renee: PROMOTED — canonical workforce knowledge only; no live GPT Builder or advertising-account mutation required.
