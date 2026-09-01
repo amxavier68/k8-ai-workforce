@@ -56,13 +56,20 @@ for (const phrase of ["No live mutation", "Sentinel — ACCEPTED", "Mira — ACC
 
 const sep2 = fs.readFileSync(files[6], "utf8");
 for (const phrase of [
-  "Status: PROPOSED — LIVE UPDATE PENDING",
+  "Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-02",
   "not a new operative general product-safety law",
   "Dynamic Search Ads sunset and auto-upgrade until February 2027",
   "does not authorise K8",
-  "Acceptance required"
+  "Atlas: VERIFIED",
+  "Sentinel: ACCEPTED",
+  "Finlay: GATE RETAINED",
+  "Mira: ACCEPTED",
+  "Renee: PROMOTED"
 ]) {
-  if (!sep2.includes(phrase)) fail(`2 Sep proposal missing: ${phrase}`);
+  if (!sep2.includes(phrase)) fail(`2 Sep canonical record missing: ${phrase}`);
+}
+if (sep2.includes("Status: PROPOSED") || sep2.includes("LIVE UPDATE PENDING") || sep2.includes("Acceptance required")) {
+  fail("2 Sep canonical record retains stale proposal state");
 }
 
 console.log(`STATIC_CI_PASS: ${files.length} knowledge records validated`);
