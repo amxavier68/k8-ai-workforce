@@ -7,7 +7,8 @@ const files = [
   "knowledge-patches/2026-08-31-weekend-rollup.md",
   "knowledge-patches/2026-09-01-daily-intelligence.md",
   "knowledge-patches/2026-09-01-audit-promotion.md",
-  "knowledge-patches/2026-09-02-daily-intelligence.md"
+  "knowledge-patches/2026-09-02-daily-intelligence.md",
+  "knowledge-patches/2026-09-04-daily-intelligence.md"
 ];
 
 const fail = (message) => {
@@ -35,7 +36,7 @@ for (const path of files.slice(0, 5)) {
 
 const aug28 = fs.readFileSync(files[2], "utf8");
 if (!aug28.includes("official stable releases page still listed 11.0.1 as stable")) {
-  fail("WooCommerce scheduled-vs-stable qualifier missing");
+  fail("WooCommerce historical scheduled-vs-stable qualifier missing");
 }
 if (!aug28.includes("broader K8/client implications remain WATCH")) {
   fail("Ask Maps WATCH boundary missing");
@@ -70,6 +71,26 @@ for (const phrase of [
 }
 if (sep2.includes("Status: PROPOSED") || sep2.includes("LIVE UPDATE PENDING") || sep2.includes("Acceptance required")) {
   fail("2 Sep canonical record retains stale proposal state");
+}
+
+const sep4 = fs.readFileSync(files[7], "utf8");
+for (const phrase of [
+  "Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-04",
+  "supersedes the WooCommerce 11.1 release-status observation",
+  "WooCommerce 11.1.0 is now available for download",
+  "requiring a database update",
+  "stable release; staging validation required",
+  "No production upgrade",
+  "Atlas: VERIFIED",
+  "Sentinel: ACCEPTED",
+  "DevMate: GATE RETAINED",
+  "Mira: ACCEPTED",
+  "Renee: PROMOTED"
+]) {
+  if (!sep4.includes(phrase)) fail(`4 Sep canonical record missing: ${phrase}`);
+}
+if (sep4.includes("Status: PROPOSED") || sep4.includes("LIVE UPDATE PENDING") || sep4.includes("Acceptance required")) {
+  fail("4 Sep canonical record retains stale proposal state");
 }
 
 console.log(`STATIC_CI_PASS: ${files.length} knowledge records validated`);
