@@ -8,7 +8,8 @@ const files = [
   "knowledge-patches/2026-09-01-daily-intelligence.md",
   "knowledge-patches/2026-09-01-audit-promotion.md",
   "knowledge-patches/2026-09-02-daily-intelligence.md",
-  "knowledge-patches/2026-09-04-daily-intelligence.md"
+  "knowledge-patches/2026-09-04-daily-intelligence.md",
+  "knowledge-patches/2026-09-07-daily-intelligence.md"
 ];
 
 const fail = (message) => {
@@ -91,6 +92,29 @@ for (const phrase of [
 }
 if (sep4.includes("Status: PROPOSED") || sep4.includes("LIVE UPDATE PENDING") || sep4.includes("Acceptance required")) {
   fail("4 Sep canonical record retains stale proposal state");
+}
+
+const sep7 = fs.readFileSync(files[8], "utf8");
+for (const phrase of [
+  "Status: CANONICAL KNOWLEDGE — OWNER APPROVED 2026-09-07",
+  "generated, inferred or observed",
+  "momentary holding can still be collection",
+  "2026-12-10 as a compliance gate",
+  "rolled out to all websites worldwide by 2026-08-31",
+  "impressions as exposure evidence",
+  "No policy publication",
+  "Atlas: VERIFIED",
+  "Sentinel: ACCEPTED",
+  "Kai: GATE RETAINED",
+  "DevMate: GATE RETAINED",
+  "Clarity: ACCEPTED",
+  "Mira: ACCEPTED",
+  "Renee: PROMOTED"
+]) {
+  if (!sep7.includes(phrase)) fail(`7 Sep canonical record missing: ${phrase}`);
+}
+if (sep7.includes("Status: PROPOSED") || sep7.includes("LIVE UPDATE PENDING") || sep7.includes("Acceptance required")) {
+  fail("7 Sep canonical record retains stale proposal state");
 }
 
 console.log(`STATIC_CI_PASS: ${files.length} knowledge records validated`);
