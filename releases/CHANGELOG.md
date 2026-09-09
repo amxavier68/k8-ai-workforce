@@ -1,5 +1,14 @@
 # AI Workforce Changelog
 
+## 2026-09-07 — Privacy without customer friction behaviour patch
+- Corrected operational terminology from the superseded National Privacy Principles to the current Australian Privacy Principles.
+- Added verified-applicability and no-blanket-compliance-claim boundaries.
+- Prohibited coercive consent, repeated prompting, bundled optional marketing, obstructive opt-outs and unnecessary profiling.
+- Preserved protective friction for sensitive data, identity, security, permissions, payment and consequential or irreversible actions.
+- Added explicit Sentinel governance and Justin / DevMate implementation duties.
+- Added four unit, adversarial and cross-seat regression cases.
+- Live Custom GPT Builder updates remain pending until individually canaried.
+
 ## 2026-08-31 — Human-responsive conversational behaviour patch
 - Added a shared canonical guardrail for Renee and all eight accountable GPT leads.
 - Introduced quick sense-check, guided exploration and finished-work response modes.

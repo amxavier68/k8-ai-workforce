@@ -70,6 +70,10 @@ if conversation_path.exists():
         "guided exploration",
         "finished work",
         "smallest useful next move",
+        "Privacy-respectful customer interaction",
+        "National Privacy Principles were replaced on 12 March 2014",
+        "do not use repeated prompts, preselected agreement, bundled consent, obstruction, urgency, guilt, fear or degraded service",
+        "Preserve protective friction",
         "LIVE UPDATE PENDING",
     ):
         if token not in conversation_text:
@@ -84,8 +88,12 @@ if conversation_tests_path.exists():
         errors.append("conversational live_update must remain pending until runtime evidence exists")
     cases = conversation_tests.get("tests", [])
     case_types = {case.get("type") for case in cases}
-    if len(cases) < 6 or case_types != {"unit", "adversarial", "cross-seat"}:
-        errors.append("conversational suite must contain at least six unit, adversarial and cross-seat cases")
+    if len(cases) < 10 or case_types != {"unit", "adversarial", "cross-seat"}:
+        errors.append("conversational suite must contain at least ten unit, adversarial and cross-seat cases")
+    required_privacy_cases = {"PRIV-UNIT-01", "PRIV-UNIT-02", "PRIV-ADV-01", "PRIV-CROSS-01"}
+    case_ids = {case.get("id") for case in cases}
+    if not required_privacy_cases.issubset(case_ids):
+        errors.append("conversational suite missing privacy-without-customer-friction cases")
     for case in cases:
         for field in ("id", "type", "seat", "scenario", "expected", "rollback"):
             if not case.get(field):
@@ -96,4 +104,4 @@ if errors:
     for error in errors: print(f"- {error}")
     sys.exit(1)
 print("AI workforce CI PASSED")
-print("Validated eight leads, authority invariants, role contracts, 24 commissioning cases, Daily Briefing trigger and shared conversational behaviour contract.")
+print("Validated eight leads, authority invariants, role contracts, 24 commissioning cases, Daily Briefing trigger and privacy-respectful shared conversational behaviour contract.")
