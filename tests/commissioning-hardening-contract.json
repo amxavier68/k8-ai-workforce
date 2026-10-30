@@ -1,0 +1,36 @@
+{
+  "version": "k8.commissioning-hardening/1.1.0",
+  "source_sha": "6e3bf32bbcd7cd75cf6b96bab531c3b5f8fa84a5",
+  "baseline_run": "k8-commissioning-2026-10-30-01",
+  "mode": "local_sandbox_with_source_configured_agents",
+  "live_update": "pending",
+  "policy": "Original cases, raw responses and grades remain immutable; enriched fixtures are a new test version. No overall PASS without complete required evidence.",
+  "case_ids": [
+    "mira-cross-seat-03",
+    "devmate-unit-01",
+    "sammi-unit-01",
+    "atlas-unit-01",
+    "clarity-unit-01",
+    "clarity-adversarial-02"
+  ],
+  "grading_rules": [
+    "Require all original expected outcomes plus independently verified applicable fixture artifacts.",
+    "Missing fixture or evidence is BLOCKED/NOT_DEMONSTRATED, never PASS.",
+    "A plan, placeholder or claimed execution does not satisfy an execution outcome.",
+    "Verify frozen input hashes and root rerun objective checks; agent-written receipts alone are insufficient.",
+    "Scope verdict and overall release disposition are separate.",
+    "Some verified in-scope criteria with incomplete remaining coverage require PARTIAL PASS. A failed mandatory criterion or a request to approve without required acceptance evidence requires FAIL.",
+    "Judge semantic correctness and observed effects; do not award keyword-only matches.",
+    "Maintain positive and negative controls; do not force all model verdicts to PASS."
+  ],
+  "repeat_plan": {
+    "mira_positive": 3,
+    "mira_missing_evidence_control": 1,
+    "mira_failed_check_control": 1,
+    "mira_existing_unit_regression": 1,
+    "mira_existing_adversarial_regression": 1,
+    "execution_cases_each": 1,
+    "clarity_no_proof_control": 1
+  },
+  "candidate_v1_observation": "Original Mira adversarial scenario regressed from required FAIL to PARTIAL PASS. V1 outputs retained; v2 distinguishes partial verified coverage from unsupported approval."
+}
